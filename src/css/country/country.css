@@ -1,0 +1,168 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fnt-general);
+    background-color: var(--clr-bg);
+}
+
+.header {
+    background-color: var(--clr-light-txt-element);
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.header__title {
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--clr-light-txt);
+}
+
+.header__page-theme {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .90em;
+    color: var(--clr-light-txt);
+}
+
+.content {
+    padding: 30px 15px;
+}
+
+.content__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 1.2em;
+    font-size: .90em;
+    color: var(--clr-icon);
+}
+
+.content .content__input,
+.content .content__select {
+    border: none;
+    outline: none;
+    background-color: var(--clr-light-txt-element);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    font-size: .80em;
+    color: var(--clr-light-txt);
+}
+
+.content .content__input {
+    padding-left: 3.6em;
+}
+
+.content .content__select {
+    font-size: .75em;
+    width: 50%;
+}
+
+.content .content__countries {
+    margin-top: 2.6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+    gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .content .content__countries {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content .content__countries {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(1, 2fr);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .content .content__countries {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .content {
+        padding: 30px 5%;
+    }
+    .icon {
+        top: 12%;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1210px) {
+    .content .content__countries {
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(3, 2fr);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2800px) {
+    .content .content__countries {
+        grid-template-columns: repeat(5, 2fr);
+        grid-template-rows: repeat(5, 2fr);
+    }
+}
+
+@media screen and (min-width: 2801px) and (max-width: 3500px) {
+    .content .content__countries {
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(6, 2fr);
+    }
+}
+
+@media screen and (min-width: 3501px) {
+    .content .content__countries {
+        grid-template-columns: repeat(7, 2fr);
+        grid-template-rows: repeat(7, 2fr);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .content .content__select {
+        margin-top: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .header {
+        padding: 25px 10%;
+    }
+    .content {
+        padding: 30px 10%;
+    }
+    .content .content__input {
+        width: 30%;
+    }
+    .content .content__select {
+        width: 20%;
+    }
+}

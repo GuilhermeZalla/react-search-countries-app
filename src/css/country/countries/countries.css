@@ -1,0 +1,58 @@
+@charset "UTF-8";
+a {
+    text-decoration: none;
+    color: var(--clr-light-txt);
+}
+
+.content .content__article {
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    background-color: var(--clr-light-txt-element);
+    transition: 280ms all;
+}
+
+.content .content__article:active {
+    transform: scale(95%);
+}
+
+.content .content__header {
+    height: 150px;
+}
+
+.content .content__img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.content .content__article-body {
+    padding: 25px 20px;
+}
+
+.content .content__country-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.content .content__list {
+    margin-top: 1.4rem;
+}
+
+.content .content__item {
+    margin: .50rem 0;
+}
+
+.content .content__subtitle {
+    font-weight: 600;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .content .content__article {
+        width: 70vw;
+    }
+}
