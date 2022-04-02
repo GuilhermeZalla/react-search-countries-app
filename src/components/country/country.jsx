@@ -29,6 +29,7 @@ const Country = () => {
     }
 
     const getCountry = event => filterCountryByName(event.target.value);
+    
 
     const transformValue = number => {
         const internationalNumberFormat = new Intl.NumberFormat('en-US');
@@ -79,7 +80,7 @@ const Country = () => {
                     </div>
                     <div className="content__countries">
                         {countries?.map((country, index) => {
-                            if (country.name === countryName) {
+                            if (country.name.toLowerCase() === countryName.toLowerCase()) {
                                 return <Countries key={index} img_url={country.flag} name={country.name} population={transformValue(country.population)} region={country.region} capital={country.capital} />
                             } else {
                                 return null;
