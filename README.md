@@ -31,7 +31,7 @@
 
 ## How To Use
 
-<p>Just click above the country you want to know more about or use the filter first and filter by region and see all the countries by a choosen region</p>
+<p>Just click above the country you want to know more about or use the filter first and filter by region to see all the countries by a choosen region</p>
 
 ## Contact
 
