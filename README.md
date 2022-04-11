@@ -39,4 +39,4 @@
 - [Email](zallaguilherme@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/guilhermezalla/)
 
-<h3>Thank you for you visit on my github!</h3>
+<h3>Thank you for your visit on my github!</h3>
